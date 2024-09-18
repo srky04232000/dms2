@@ -1,0 +1,202 @@
+[
+    {
+        "sensorReadings": [
+            28.1,
+            36.7
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 1: Checked crop health, found no issues.",
+        "gpsCoordinates": -85.540582,
+        "timestamp": "2024-09-18T03:47:13.541970"
+    },
+    {
+        "sensorReadings": [
+            36.0,
+            39.2
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 2: Checked crop health, found overwatering.",
+        "gpsCoordinates": -60.363194,
+        "timestamp": "2024-09-18T03:47:13.541995"
+    },
+    {
+        "sensorReadings": [
+            28.3,
+            71.8
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 3: Checked crop health, found pests.",
+        "gpsCoordinates": -2.938357,
+        "timestamp": "2024-09-18T03:47:13.542012"
+    },
+    {
+        "sensorReadings": [
+            37.5,
+            52.1
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 4: Checked crop health, found no issues.",
+        "gpsCoordinates": 16.499696,
+        "timestamp": "2024-09-18T03:47:13.542026"
+    },
+    {
+        "sensorReadings": [
+            35.0,
+            38.6
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 5: Checked crop health, found no issues.",
+        "gpsCoordinates": 0.263101,
+        "timestamp": "2024-09-18T03:47:13.542040"
+    },
+    {
+        "sensorReadings": [
+            33.7,
+            46.4
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 6: Checked crop health, found overwatering.",
+        "gpsCoordinates": 24.397245,
+        "timestamp": "2024-09-18T03:47:13.542053"
+    },
+    {
+        "sensorReadings": [
+            25.9,
+            65.9
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 7: Checked crop health, found pests.",
+        "gpsCoordinates": -5.431388,
+        "timestamp": "2024-09-18T03:47:13.542068"
+    },
+    {
+        "sensorReadings": [
+            29.9,
+            74.0
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 8: Checked crop health, found no issues.",
+        "gpsCoordinates": -40.397274,
+        "timestamp": "2024-09-18T03:47:13.542093"
+    },
+    {
+        "sensorReadings": [
+            28.3,
+            70.3
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 9: Checked crop health, found pests.",
+        "gpsCoordinates": -23.521896,
+        "timestamp": "2024-09-18T03:47:13.542108"
+    },
+    {
+        "sensorReadings": [
+            31.7,
+            53.4
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 10: Checked crop health, found no issues.",
+        "gpsCoordinates": 85.74586,
+        "timestamp": "2024-09-18T03:47:13.542121"
+    },
+    {
+        "sensorReadings": [
+            23.0,
+            35.5
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 11: Checked crop health, found no issues.",
+        "gpsCoordinates": -84.133787,
+        "timestamp": "2024-09-18T03:47:13.542132"
+    },
+    {
+        "sensorReadings": [
+            28.2,
+            71.5
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 12: Checked crop health, found pests.",
+        "gpsCoordinates": 8.514281,
+        "timestamp": "2024-09-18T03:47:13.542144"
+    },
+    {
+        "sensorReadings": [
+            19.8,
+            74.3
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 13: Checked crop health, found dry soil.",
+        "gpsCoordinates": -8.551676,
+        "timestamp": "2024-09-18T03:47:13.542155"
+    },
+    {
+        "sensorReadings": [
+            38.4,
+            64.8
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 14: Checked crop health, found dry soil.",
+        "gpsCoordinates": 80.040554,
+        "timestamp": "2024-09-18T03:47:13.542167"
+    },
+    {
+        "sensorReadings": [
+            28.7,
+            73.3
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 15: Checked crop health, found no issues.",
+        "gpsCoordinates": 11.361422,
+        "timestamp": "2024-09-18T03:47:13.542178"
+    },
+    {
+        "sensorReadings": [
+            38.9,
+            34.2
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 16: Checked crop health, found pests.",
+        "gpsCoordinates": 36.693761,
+        "timestamp": "2024-09-18T03:47:13.542190"
+    },
+    {
+        "sensorReadings": [
+            17.8,
+            75.5
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 17: Checked crop health, found no issues.",
+        "gpsCoordinates": 32.51597,
+        "timestamp": "2024-09-18T03:47:13.542201"
+    },
+    {
+        "sensorReadings": [
+            27.9,
+            36.0
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 18: Checked crop health, found dry soil.",
+        "gpsCoordinates": -70.011096,
+        "timestamp": "2024-09-18T03:47:13.542213"
+    },
+    {
+        "sensorReadings": [
+            33.2,
+            72.3
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 19: Checked crop health, found pests.",
+        "gpsCoordinates": -86.869334,
+        "timestamp": "2024-09-18T03:47:13.542227"
+    },
+    {
+        "sensorReadings": [
+            20.0,
+            62.3
+        ],
+        "cropPhoto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...",
+        "farmerNote": "Observation note 20: Checked crop health, found pests.",
+        "gpsCoordinates": -45.867836,
+        "timestamp": "2024-09-18T03:47:13.542239"
+    }
+]
