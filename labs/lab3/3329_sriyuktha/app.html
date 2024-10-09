@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB Lab-3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="max-w-4xl mx-auto p-8">
+        <h1 class="text-2xl font-bold text-center text-blue-800 mb-4">Generate and Store 1000 Objects in IndexedDB</h1>
+        <div class="text-center">
+            <button id="generateButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Generate
+                and Store</button>
+        </div>
+        <p id="status" class="text-center mt-4 text-gray-600">Click the button to generate objects.</p>
+        <div id="objectList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"></div>
+    </div>
+
+    <script>
+        let db;
+        const request = indexedDB.open('Lab3DB', 1);
+
+        request.onupgradeneeded = function (event) {
+            db = event.target.result;
+            const objectStore = db.createObjectStore('new_objects', { keyPath: 'id', autoIncrement: true });
+            objectStore.createIndex('uuid', 'uuid', { unique: true });
+        };
+
+        request.onsuccess = function (event) {
+            db = event.target.result;
+            document.getElementById('status').innerText = 'Database initialized. Ready to store objects.';
+        };
+
+        request.onerror = function (event) {
+            console.error('Error opening IndexedDB:', event.target.errorCode);
+        };
+
+        function generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        function generateObject() {
+            const now = new Date();
+            return {
+                uuid: generateUUID(),
+                source_db: "IndexedDB",
+                created_at: now.toISOString(),
+                updated_at: now.toISOString(),
+                product_name: `Product ${Math.floor(Math.random() * 1000)}`,
+                price: (Math.random() * 100).toFixed(2),
+                available: Math.random() < 0.5
+            };
+        }
+
+        function storeObjects() {
+            const transaction = db.transaction(['new_objects'], 'readwrite');
+            const objectStore = transaction.objectStore('new_objects');
+            const objectList = document.getElementById('objectList');
+
+            objectList.innerHTML = '';
+            Array.from({ length: 1000 }, () => generateObject()).forEach((object) => {
+                objectStore.add(object);
+                const div = document.createElement('div');
+                div.className = 'bg-white p-4 shadow rounded-lg';
+                div.innerHTML = `
+                    <h2 class="font-bold text-lg">${object.product_name}</h2>
+                    <p class="text-sm text-gray-600">UUID: ${object.uuid}</p>
+                    <p class="text-sm">Price: $${object.price}</p>
+                    <p class="text-sm">Available: ${object.available ? 'Yes' : 'No'}</p>
+                `;
+                objectList.appendChild(div);
+            });
+
+            transaction.oncomplete = function () {
+                document.getElementById('status').innerText = '1000 objects generated and stored successfully in IndexedDB!';
+            };
+
+            transaction.onerror = function (event) {
+                console.error('Transaction error:', event.target.errorCode);
+            };
+        }
+
+        document.getElementById('generateButton').addEventListener('click', storeObjects);
+    </script>
+
+</body>
+
+</html>
